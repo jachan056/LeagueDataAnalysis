@@ -97,6 +97,8 @@ The first test is done on the goldat25 and match duration columns to test whethe
 
 **Alternative Hypothesis**: The mean match duration is longer for matches with data for goldat25.
 
+**Test Statistic**: The test statistic utilized will be difference in mean duration for matches with and without data for theri entries in the goldat25 column. 
+
 The empirical distribution of the test statistic and observed statistic during the permutation testing resulted in such a plot:
 <iframe
   src="figures/gold25vsduration.html"

@@ -126,3 +126,14 @@ The empirical distribution of the test statistic and observed statistic during t
 ></iframe>
 
 The observed mean difference was calculated to be approximately 0.00051. The p-value is derived to be 0.444 after conducting the permutation tests. Since the p-value was way more than 0.05, the original signifiance level, we fail to reject the null hypothesis. Thus, this indicates that the missingness in goldat25 column does not depend on the result column (whether the match was won or lost).
+
+## Hypothesis Testing
+In the hypothesis test, I want to determine if there is a significant difference between the probabilities of mid-laners having the highest damageshare in their match or bot-laners having the highest damageshare in their match. This is important in answering the overall research question because finding out which position has a the higher damageshare allows us to use the damageshares of that position and then predict whether a team wins or loses based on the performance of their mid-laner in the match.
+
+**Null Hypothesis**: There is an equal probability for mid-laners/bot-laners achieving the highest damage share in their match.
+
+**Alternative Hypothesis**: There is an unequal probability for mid-laners/bot-laners achieving the highest damage share in their match as in the bot-lane (ADC) has the more favorable probability over the other. 
+
+**Test Statistic**: Absolute mean difference between mid-laners having higher damage shares and bot-laners having damage shares.
+
+**Significance Level**: 5% or 0.05

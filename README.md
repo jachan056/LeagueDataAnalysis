@@ -37,3 +37,11 @@ The dataset provides an extensive overview on game-related statistics on teams a
 - `earnedgold`: This column represents how much gold a player earned throughout the match and a higher count means the player is more likely able to purchase items in the shop that provide extra stats/abilities to increase their power and strength to kill enemies.
 
 - `Champion`: This column represents which champion each player chose to play during the match.
+
+## Data Cleaning and Exploratory Data Analysis
+### Data Cleaning
+The first step into the data cleaning process, only the relevant columns were kept which were the ones shown above. In the dataset, each match that took place is represented by 12 rows where 10 of them represent the players that played in the match and the last 2 rows being overall team statistics. During the cleaning process, only 4 rows were kept which were the 2 mid-laners and 2 bot-laners as those were the positions I was most interested in analyzing. 
+
+Additionally, a new column was added, which was the K/D ratio column by dividing the amount of kills and amount of deaths of each player. The higher the ratio, the better performing the player is because the player is eliminating more players than dying, which contributes heavily to the team's success. Eliminating more means the player gains more expereince points and gold which can be used to strenghten the character to perform even better. When calculating K/D ratios, some players that had 0 deaths resulted in infinity as the calculated kill-death ratio, which is impossible. To combat this, during the calculation process, instead of 0 deaths are replaced with 1 deaths to prevent any non-realistic values. The resulting ratio is also the same as the amount of kills the player got in the match.
+
+Head of cleaned dataframe:

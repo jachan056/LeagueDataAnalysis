@@ -88,3 +88,21 @@ contributing more than the ADC position.
 ## Assessment of Missingness
 
 ### NMAR Analysis:
+A column that could be NMAR would be the pentakill column which represents when a single player eliminates the entire enemy team by themself. The data is missing not at random due to the fact that no player during that match was able to achieve such a feat. Additionally, you can not use other columns to infer the amount of pentakills as no statistic is able to directly predict whether a player eliminated the entire enemy team by themself, making the column NMAR.
+
+### Missingness Dependency: 
+The first test is done on the goldat25 and match duration columns to test whether goldat25's missingness depends on gamelength (match duration) column.
+
+**Null Hypothesis**: The mean match duration is equal for matches with and without data for goldat25.
+
+**Alternative Hypothesis**: The mean match duration is longer for matches with data for goldat25.
+
+The empirical distribution of the test statistic and observed statistic during the permutation testing resulted in such a plot:
+<iframe
+  src="figures/gold25vsduration.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+The observed mean difference was calculated to be approximately 179.98. The p-value is derived to be 0 after conducting the permutation tests. Since the p-value was way less than 0.05, the original signifiance level, we can reject the null hypothesis. Thus, this indicates that the missingness in goldat25 column depends on the gamelength (match duration) column.

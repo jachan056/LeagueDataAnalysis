@@ -18,22 +18,22 @@ The dataset provides an extensive overview on game-related statistics on teams a
 
 - `gameid`: This column represents the specific matches played by players throughout the year. This allows for the separation of different matches played during 2024.
 
-- `teamname`:
+- `teamname`: This column represents the unique identifier for each team participating in any match in the 2024 season.
 
-- `position`:
+- `position`: This column represents the specific role played by each individual player in a match consisting of top-lane (top), mid-lane (mid), jungle (jng), support (sup), and bot-lane (ADC).
 
-- `result`:
+- `result`: This column represents the specific outcome of the match. 0 indicates that the player's team lost, while 1 indicates that the player's team won.
 
-- `K/D Ratio`:
+- `K/D Ratio`: This column represents the kill death ratio of a player. The higher the ratio means the player kills more enemy players before dying, which contributes heavily to a team's success as more kills means the player can be further strengthened and perform even better. 
 
-- `assists`:
+- `assists`: This column represents the amount of times a player assisted/ contributed in the elimination of an enemy player without securing it themselves.
 
-- `damageshare`:
+- `damageshare`: This column represents the proportion in which the player contributes to team damage (How much % of the team's damage did the specific player deal throughout the match).
 
-- `damagetochampions`:
+- `damagetochampions`: This column represents the total damage a player inflicts to the enemy throughout the match, and high damage means significant contribution to team victory because high damage usually correlates with high elimination count.
 
-- `total cs`:
+- `total cs`: This column represents the count of how many minions a player has killed throughout the match. High CS means more experience and gold in which the gold can be spent on items to strengthen a player's ability to kill and increase experience points, which also strengthens a player.
 
-- `earnedgold`:
+- `earnedgold`: This column represents how much gold a player earned throughout the match and a higher count means the player is more likely able to purchase items in the shop that provide extra stats/abilities to increase their power and strength to kill enemies.
 
-- `Champion`:
+- `Champion`: This column represents which champion each player chose to play during the match.

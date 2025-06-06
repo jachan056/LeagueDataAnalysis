@@ -45,7 +45,6 @@ The first step into the data cleaning process, only the relevant columns were ke
 Additionally, a new column was added, which was the K/D ratio column by dividing the amount of kills and amount of deaths of each player. The higher the ratio, the better performing the player is because the player is eliminating more players than dying, which contributes heavily to the team's success. Eliminating more means the player gains more expereince points and gold which can be used to strenghten the character to perform even better. When calculating K/D ratios, some players that had 0 deaths resulted in infinity as the calculated kill-death ratio, which is impossible. To combat this, during the calculation process, instead of 0 deaths are replaced with 1 deaths to prevent any non-realistic values. The resulting ratio is also the same as the amount of kills the player got in the match.
 
 Head of cleaned dataframe:
-
 | gameid               | position | teamname     | result | kills | deaths | assists | damagetochampions | damageshare | total cs | earnedgold | K/D ratio |
 |:---------------------|:---------|:-------------|-------:|------:|-------:|--------:|------------------:|------------:|---------:|-----------:|----------:|
 | 10660-10660_game_1   | mid      | LNG Esports  |      0 |     0 |      2 |       0 |             10005 |     0.239355 |      270 |       6620 |         0 |
@@ -53,3 +52,17 @@ Head of cleaned dataframe:
 | 10660-10660_game_1   | mid      | Rare Atom    |      1 |     4 |      0 |       7 |             14917 |     0.261963 |      329 |      10480 |         4 |
 | 10660-10660_game_1   | bot      | Rare Atom    |      1 |     7 |      1 |       5 |             19516 |     0.342725 |      303 |      10898 |       3.5 |
 | 10660-10660_game_2   | mid      | LNG Esports  |      0 |     1 |      4 |       2 |             11376 |     0.209038 |      219 |       5681 |       0.2 |
+
+### Univariate Analysis:
+Univariate Analysis was performed on the earned gold statistic by players. 
+
+The graph shows a relatively normal distribution based on its shape. The shape of the graph indicates a large cluster towards the bin between 5000 and 10,000 gold range, and most players in the 2024 season usually earn around 8000-9000 gold in their matches based on the tallest rectangle sectioned in the graph. 
+
+<iframe
+  src="figures/gold-distribution.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+There was an additional graph for the distribution of ... in the dataframe. 

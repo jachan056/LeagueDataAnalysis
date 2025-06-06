@@ -45,6 +45,7 @@ The first step into the data cleaning process, only the relevant columns were ke
 Additionally, a new column was added, which was the K/D ratio column by dividing the amount of kills and amount of deaths of each player. The higher the ratio, the better performing the player is because the player is eliminating more players than dying, which contributes heavily to the team's success. Eliminating more means the player gains more expereince points and gold which can be used to strenghten the character to perform even better. When calculating K/D ratios, some players that had 0 deaths resulted in infinity as the calculated kill-death ratio, which is impossible. To combat this, during the calculation process, instead of 0 deaths are replaced with 1 deaths to prevent any non-realistic values. The resulting ratio is also the same as the amount of kills the player got in the match.
 
 Head of cleaned dataframe:
+
 | gameid               | position | teamname     | result | kills | deaths | assists | damagetochampions | damageshare | total cs | earnedgold | K/D ratio |
 |:---------------------|:---------|:-------------|-------:|------:|-------:|--------:|------------------:|------------:|---------:|-----------:|----------:|
 | 10660-10660_game_1   | mid      | LNG Esports  |      0 |     0 |      2 |       0 |             10005 |     0.239355 |      270 |       6620 |         0 |

@@ -152,4 +152,12 @@ The features added for the final model include KDA ratios and goldfromelims. KDA
 The model utilized for the final model was the DecisionTreeClassifier for the existence of nonlinear relationships and validated the model through KFold Cross-validation. In the case of tuning hyperparameters, I utilized max depth and found that the optimal max depth to use was 8. In doing so, the highest mean_test_score which represented the cross-validation accuracy came back to 88.5%. Utilizing all that was known, and utilizing the features KDA Ratio, damageshare, and goldfromelims, the new model's accuracy came back to 88.4%, which was an improvement, meaning the model was better at predicting the wins/losses. 
 
 ## Fairness Analysis
-...
+The Fairness Analysis assess the model and is trying to answer the following question: Does my model perform worse for players who play ADC Yasuo than it does for players who do not play ADC Yasuo? (ADC and bot-lane are the same). A permutation test was done in order to answer this question with the dataset. 
+
+**Null Hypothesis**: Our model is fair. Precision is roughly the same for players that play or do not play Yasuo in bot-lane.
+
+**Alternative Hypothesis**: Model is unfair. Precision is higher for players that play Yasuo in bot-lane.  
+
+**Test Statistic**: Difference in accuracy between players that did play Yasuo and players who did not.
+
+The p-value of the model ended up being 0.3 meaning we fail to reject the null hypothesis. Therefore, the model is considered fair and precision levels are similar for bot-lane players regardless of whether or not they play Yasuo. This implies that the model does not have a strong towards a group (those who play Yasuo or those who do not).

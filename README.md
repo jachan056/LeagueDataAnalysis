@@ -108,3 +108,21 @@ The empirical distribution of the test statistic and observed statistic during t
 ></iframe>
 
 The observed mean difference was calculated to be approximately 179.98. The p-value is derived to be 0 after conducting the permutation tests. Since the p-value was way less than 0.05, the original signifiance level, we can reject the null hypothesis. Thus, this indicates that the missingness in goldat25 column depends on the gamelength (match duration) column.
+
+The second test is done on the goldat25 and result column to test whether goldat25's missingness depends on the result of a match (win/lose) (result) column.
+
+**Null Hypothesis**: There is an equal distribution for amount of wins/losses for matches with and without data for goldat25.
+
+**Alternative Hypothesis**: Values in goldat25 are more likely to be recorded for players who ended up winning the match (1 as their value in the result column). 
+
+**Test Statistic**: The test statistic utilized will be difference in means of the result columns for rows with data in goldat25 and for rows with no data in goldat25. 
+
+The empirical distribution of the test statistic and observed statistic during the permutation testing resulted in such a plot:
+<iframe
+  src="figures/gold25vsresult.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+The observed mean difference was calculated to be approximately 0.00051. The p-value is derived to be 0.444 after conducting the permutation tests. Since the p-value was way more than 0.05, the original signifiance level, we fail to reject the null hypothesis. Thus, this indicates that the missingness in goldat25 column does not depend on the result column (whether the match was won or lost).

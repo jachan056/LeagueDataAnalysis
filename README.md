@@ -9,7 +9,7 @@ Author: Ja-Chan Lu
 ### General Description:
 The dataset this project explores is given by Oracle's Elixir which provides significant data on each match that took place in 2024. The dataset provides much insight on each match ranging from outcomes, to key statistics of individual players which help quantify the performance of each player and the team as a whole.
 
-The term "carry potential" of a role is defined by the impact of that role's performance inthe match which ultimately leads the team to victory. High carry potential means the role significantly impacted the outcome of the match, whereas low carry potential means the role's contribution to the outcome is not as significant.
+The term "carry potential" of a role is defined by the impact of that role's performance in the match which ultimately leads the team to victory. High carry potential means the role significantly impacted the outcome of the match, whereas low carry potential means the role's contribution to the outcome is not as significant.
 
 The question I really want answered is which role out of the 5 roles given to teams in LOL have the most significant impact on the outcome of matches for their team. I will use various data analysis techniques to quantify their impact: Stats such as minion kills, damage done to other champions, number of kills, combat score (cs), etc. After answering which role has the most carry potential, I will use that data to build a prediction model to predict the outcome of numerous matches throughout the year, especially during big tournaments like Worlds (WLDs).
 
@@ -73,3 +73,14 @@ Bivariate Analysis was done on the columns damagetochampions and to earned gold.
 ></iframe>
 
 The scatterplot is done to comapre the values of 2 columns (damagetochampions and earnedgold). Based on the graph shown, there is a strong positive lienar association, which means as damage to other champions increases, earned gold will increase as well.
+
+### Intresting Aggregates:
+
+| position   |   kills |   deaths |   assists |   damagetochampions |   damageshare |   total cs |   earnedgold |   K/D ratio |
+|:-----------|--------:|---------:|----------:|--------------------:|--------------:|-----------:|-------------:|------------:|
+| bot        | 3.8     |  2.8     |   5.4     |             17734.2 |      0.215082 |    246.6   |       8067   |     1.16    |
+| mid        | 3.94358 |  2.70564 |   6.04136 |             21810.6 |      0.270174 |    277.613 |       9233.6 |     1.57217 |
+
+For the aggregate, the dataframe is grouped by position, then the mean function is applied to get the mean of the columns: K/D ratio, assists, damagetochampions, total cs, and earned gold for the mid-laner position and bot-laner/ADC position. The results show that on average, mid-laners have a much higher K/D ratio, which means they are doing more killing, whihc in turn contributes to both indivdual and team success. Mid-laners on average, lead in K/D ratios, 
+assists, damage to champions, total cs, and earned gold. Mid-laners ultimately seem to be 
+contributing more than the ADC position.

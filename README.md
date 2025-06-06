@@ -134,6 +134,8 @@ In the hypothesis test, I want to determine if there is a significant difference
 
 **Alternative Hypothesis**: There is an unequal probability for mid-laners/bot-laners achieving the highest damage share in their match as in the bot-lane (ADC) has the more favorable probability over the other. 
 
-**Test Statistic**: Absolute mean difference between mid-laners having higher damage shares and bot-laners having damage shares.
+**Test Statistic**: Absolute mean difference between mid-laners' damage shares and bot-laners' damage shares because the absolute mean difference best measures the difference in their damage shares to be able to display how much 1 contributes to team success over the other. 
 
-**Significance Level**: 5% or 0.05
+**Significance Level**: 5% or 0.05 because of the standard/default level of significance always being 0.05. 
+
+The level of significance chosen was 0.05, and the p-value ended up being 0.0008 which was way below the level of significance. This means that the null hypothesis can be rejected, therefore bot-laners have a higher probability of getting a higher damage share in a given match compared to mid-laners. This means that to predict which team wins a given match, the bot-laner position should be looked at, especially their damange share statistic.

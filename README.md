@@ -15,3 +15,25 @@ The question I really want answered is which role out of the 5 roles given to te
 
 ### Introduction to the Columns:
 The dataset provides an extensive overview on game-related statistics on teams and players in their matches throughout the year. There are a total of 117,649 rows in the dataset and this is just a preview of some key columns included in the process of analysis.
+
+- `gameid`: This column represents the specific matches played by players throughout the year. This allows for the separation of different matches played during 2024.
+
+- `teamname`:
+
+- `position`:
+
+- `result`:
+
+- `K/D Ratio`:
+
+- `assists`:
+
+- `damageshare`:
+
+- `damagetochampions`:
+
+- `total cs`:
+
+- `earnedgold`:
+
+- `Champion`:

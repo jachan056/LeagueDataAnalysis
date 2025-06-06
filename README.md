@@ -84,3 +84,7 @@ The scatterplot is done to comapre the values of 2 columns (damagetochampions an
 For the aggregate, the dataframe is grouped by position, then the mean function is applied to get the mean of the columns: K/D ratio, assists, damagetochampions, total cs, and earned gold for the mid-laner position and bot-laner/ADC position. The results show that on average, mid-laners have a much higher K/D ratio, which means they are doing more killing, whihc in turn contributes to both indivdual and team success. Mid-laners on average, lead in K/D ratios, 
 assists, damage to champions, total cs, and earned gold. Mid-laners ultimately seem to be 
 contributing more than the ADC position.
+
+## Assessment of Missingness
+
+### NMAR Analysis:

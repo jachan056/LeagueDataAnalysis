@@ -56,13 +56,12 @@ Head of cleaned dataframe:
 ### Univariate Analysis:
 Univariate Analysis was performed on the earned gold statistic by players. 
 
-The graph shows a relatively normal distribution based on its shape. The shape of the graph indicates a large cluster towards the bin between 5000 and 10,000 gold range, and most players in the 2024 season usually earn around 8000-9000 gold in their matches based on the tallest rectangle sectioned in the graph. 
-
 <iframe
   src="figures/gold-distribution.html"
   width="800"
   height="600"
   frameborder="0"
 ></iframe>
+The graph shows a relatively normal distribution based on its shape. The shape of the graph indicates a large cluster towards the bin between 5000 and 10,000 gold range, and most players in the 2024 season usually earn around 8000-9000 gold in their matches based on the tallest rectangle sectioned in the graph. 
 
 There was an additional graph for the distribution of ... in the dataframe. 

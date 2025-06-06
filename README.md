@@ -63,4 +63,13 @@ Univariate Analysis was performed on the earned gold statistic by players.
 ></iframe>
 The graph shows a relatively normal distribution based on its shape. The shape of the graph indicates a large cluster towards the bin between 5000 and 10,000 gold range, and most players in the 2024 season usually earn around 8000-9000 gold in their matches based on the tallest rectangle sectioned in the graph. 
 
-There was an additional graph for the distribution of ... in the dataframe. 
+### Bivariate Analysis:
+Bivariate Analysis was done on the columns damagetochampions and to earned gold.
+<iframe
+  src="figures/goldvsdamage.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+The scatterplot is done to comapre the values of 2 columns (damagetochampions and earnedgold). Based on the graph shown, there is a strong positive lienar association, which means as damage to other champions increases, earned gold will increase as well.
